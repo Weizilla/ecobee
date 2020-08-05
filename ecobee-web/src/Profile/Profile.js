@@ -2,8 +2,7 @@ import React from 'react';
 import {useAuth0} from "@auth0/auth0-react";
 
 const Profile = () => {
-  const { user, isAuthenticated } = useAuth0();
-
+  const { isAuthenticated, user } = useAuth0();
   return (
     isAuthenticated
       ? (
@@ -13,7 +12,7 @@ const Profile = () => {
           <p>{user.email}</p>
         </div>
       )
-      : <div>No profile</div>
+      : <div>No logged in</div>
   )
 };
 

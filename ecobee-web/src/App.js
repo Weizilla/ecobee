@@ -4,6 +4,7 @@ import './App.css';
 import LoginButton from "./LoginButton/LoginButton";
 import LogoutButton from "./LogoutButton/LogoutButton";
 import Profile from "./Profile/Profile";
+import Hello from "./Hello/Hello";
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
           Learn React
         </a>
 
-        <Profile/>
+        <Hello></Hello>
 
+        <Profile/>
         <LoginButton/>
         <LogoutButton/>
       </header>

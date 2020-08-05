@@ -10,7 +10,9 @@ ReactDOM.render(
     <Auth0Provider
       domain="weizilla.us.auth0.com"
       clientId="JvqwQWyFsh4R4EZIRbzQrT9LtFx4ajOr"
-      redirectUri="http://localhost:3000"
+      redirectUri={window.location.origin}
+      audience="https://ecobee-api.weizilla.com"
+      scope="write:ecobee"
     >
       <App />
     </Auth0Provider>
